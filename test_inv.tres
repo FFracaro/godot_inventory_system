@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="InventoryData" load_steps=8 format=3 uid="uid://dwckgsi3ekorp"]
+
+[ext_resource type="Script" path="res://Resources/Inventory/inventory_data.gd" id="1_6rqcb"]
+[ext_resource type="Resource" uid="uid://380j5fq8uu3q" path="res://Resources/Item/Data/sicilian_lemon.tres" id="2_rvn07"]
+[ext_resource type="Script" path="res://Resources/Inventory/slot_data.gd" id="3_clx28"]
+[ext_resource type="Resource" uid="uid://bj5mlinplnoy8" path="res://Resources/Item/Data/wall_mirror.tres" id="4_ksmfc"]
+
+[sub_resource type="Resource" id="Resource_cbjwg"]
+script = ExtResource("3_clx28")
+item_data = ExtResource("2_rvn07")
+quantity = 400
+
+[sub_resource type="Resource" id="Resource_w2b5m"]
+script = ExtResource("3_clx28")
+item_data = ExtResource("2_rvn07")
+quantity = 4
+
+[sub_resource type="Resource" id="Resource_68fpl"]
+script = ExtResource("3_clx28")
+item_data = ExtResource("4_ksmfc")
+quantity = 1
+
+[resource]
+script = ExtResource("1_6rqcb")
+slot_datas = Array[ExtResource("3_clx28")]([null, null, null, null, SubResource("Resource_cbjwg"), SubResource("Resource_w2b5m"), null, null, null, null, SubResource("Resource_68fpl"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])

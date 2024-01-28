@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3 uid="uid://bj5mlinplnoy8"]
+
+[ext_resource type="Script" path="res://Resources/Item/item_data.gd" id="1_usgy5"]
+[ext_resource type="Texture2D" uid="uid://b4wlcwfjjjknn" path="res://Resources/Item/#2 - Transparent Icons & Drop Shadow.png" id="2_xjk70"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7aefc"]
+atlas = ExtResource("2_xjk70")
+region = Rect2(32, 352, 32, 32)
+
+[resource]
+script = ExtResource("1_usgy5")
+name = "Mirror"
+description = "Mirror, mirror, on the wall..."
+stackable = false
+texture = SubResource("AtlasTexture_7aefc")
